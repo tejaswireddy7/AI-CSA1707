@@ -35,6 +35,9 @@ venv.bak/
 *.onnx
 *.engine
 !backend/models/README.md
+# Allow the deployed model files (small enough for Git at ~5-10MB)
+!backend/models/best.pt
+!backend/models/best.onnx
 
 # OS & IDE
 .DS_Store
