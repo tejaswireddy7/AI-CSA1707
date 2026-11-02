@@ -22,6 +22,8 @@ class Settings:
         "http://127.0.0.1:3000",
         "http://localhost:8000",
         "https://road-damage-ai.vercel.app",
+        # Hugging Face Spaces backend URL pattern
+        "https://*.hf.space",
         "*"
     ])
     MAX_FILE_SIZE_MB: int = int(os.getenv("MAX_FILE_SIZE_MB", "20"))
