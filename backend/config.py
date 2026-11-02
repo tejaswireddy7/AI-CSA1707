@@ -9,12 +9,12 @@ class Settings:
     API_V1_STR: str = "/api/v1"
     
     # Model Configuration
-    # Custom trained model path; fall back to yolo11n.pt if best.pt is not available
-    MODEL_PATH: str = os.getenv("MODEL_PATH", "models/best.pt")
-    FALLBACK_MODEL_PATH: str = "yolo11n.pt"
+    # ONNX model path — export from best.pt using: python model/export_onnx.py
+    MODEL_PATH: str = os.getenv("MODEL_PATH", "models/best.onnx")
+    FALLBACK_MODEL_PATH: str = "yolo11n.onnx"
     CONFIDENCE_THRESHOLD: float = float(os.getenv("CONFIDENCE_THRESHOLD", "0.25"))
     IOU_THRESHOLD: float = float(os.getenv("IOU_THRESHOLD", "0.45"))
-    DEVICE: str = os.getenv("DEVICE", "cpu") # 'cpu', 'cuda', 'mps', or '0'
+    DEVICE: str = os.getenv("DEVICE", "cpu")
     
     # Server & Security
     ALLOWED_ORIGINS: List[str] = field(default_factory=lambda: [
