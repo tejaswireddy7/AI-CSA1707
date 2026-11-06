@@ -85,12 +85,6 @@ export default function HomePage() {
     <div className="space-y-20 pb-20">
       {/* 1. Hero Section */}
       <section className="relative pt-12 pb-8 sm:pt-20 sm:pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto text-center">
-        {/* Top Capstone Pill */}
-        <div className="inline-flex items-center gap-2 rounded-full bg-slate-900/90 border border-blue-500/30 px-4 py-1.5 text-xs font-semibold text-blue-300 mb-8 shadow-lg shadow-blue-500/10 animate-fade-in">
-          <span className="flex h-2 w-2 rounded-full bg-blue-400 animate-ping" />
-          <span>AI Capstone Project • YOLOv11 Computer Vision</span>
-        </div>
-
         {/* Hero Main Heading */}
         <h1 className="text-4xl sm:text-6xl lg:text-7xl font-black text-slate-100 tracking-tight max-w-5xl mx-auto leading-[1.1]">
           AI-Driven Road Damage Detection &{" "}
